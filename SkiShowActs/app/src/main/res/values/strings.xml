@@ -1,0 +1,6 @@
+<resources>
+    <string name="AppName">SkiShowActs</string>
+    <string name="MainAppTitleText">Acts in a Ski Show:</string>
+    <string name="item_title_placeholder">Item Title Placeholder</string>
+    <string name="item_subtitle_placeholder">Item Subtitle Placeholder</string>
+</resources>

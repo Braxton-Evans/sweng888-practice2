@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_Main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:background="@android:color/holo_blue_light">
+
+            <TextView
+                android:id="@+id/textview_MainTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/MainAppTitleText"
+                android:textSize="16pt"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/listview_acts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            tools:layout_editor_absoluteX="-5dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
